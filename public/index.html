@@ -3,32 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snippet App</title>
+    <title>Jason Koop AI Bot</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            line-height: 1.6;
         }
-        textarea {
-            width: 100%;
-            height: 200px;
+        h1 {
+            color: #333;
+        }
+        .container {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .bot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .bot-icon img {
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>Koop Bot</h1>
-    <script async
-        src="https://agent-fdf2d83955ce6ceba816-z6n94.ondigitalocean.app/static/chatbot/widget.js"
-        data-agent-id="08cd8de7-8773-11ef-bf8f-4e013e2ddde4"
-        data-chatbot-id="Z04gyYfnNc0zozj_pla1eN1TlPqhNTnr"
-        data-name="koopcast-agent Chatbot"
-        data-primary-color="#031B4E"
-        data-secondary-color="#E5E8ED"
-        data-button-background-color="#0061EB"
-        data-starting-message="I'm Coach Jason. What training questions do you have?"
-        data-logo="/static/chatbot/icons/default-agent.svg">
-    </script>
+    <h1>Welcome to the Jason Koop AI Bot</h1>
+    
+    <div class="container">
+        <h2>About This Bot</h2>
+        <p>This is a proof-of-concept AI bot built on the DigitalOcean GenAI stack. It uses hundreds of podcast transcripts from Jason Koop's "Koopcast" as its knowledge base, powering a sophisticated GenAI RAG (Retrieval-Augmented Generation) solution.</p>
+        
+        <h2>What Can It Do?</h2>
+        <p>The Jason Koop AI Bot can answer questions, provide insights, and discuss topics related to Jason Koop's expertise in endurance coaching, ultrarunning, and sports science. It's like having a virtual Jason Koop at your fingertips!</p>
+        
+        <h2>How to Use</h2>
+        <p>Look for the chat icon in the lower right corner of your screen. Click on it to open the chat interface and start interacting with the Jason Koop AI Bot. Feel free to ask questions about training, racing strategies, or any topic covered in the Koopcast podcasts.</p>
+    </div>
+
+    <div class="bot-icon" onclick="alert('Chat interface would open here')">
+        <img src="https://example.com/chat-icon.png" alt="Chat Icon">
+    </div>
 </body>
 </html>
