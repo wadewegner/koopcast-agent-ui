@@ -3,55 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason Koop AI Bot</title>
+    <title>UltraCoach AI Bot</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
             line-height: 1.6;
         }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
         h1 {
-            color: #333;
+            margin: 0;
+            font-size: 2.5rem;
         }
         .container {
-            background-color: #f9f9f9;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .card {
+            background-color: white;
             border-radius: 8px;
-            padding: 20px;
-            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
         }
-        .bot-icon {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            background-color: #4CAF50;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .bot-icon img {
-            width: 40px;
-            height: 40px;
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Jason Koop AI Bot</h1>
+    <div class="header">
+        <h1>Welcome to UltraCoach AI Bot</h1>
+    </div>
     
     <div class="container">
-        <h2>About This Bot</h2>
-        <p>This is a proof-of-concept AI bot built on the DigitalOcean GenAI stack. It uses hundreds of podcast transcripts from Jason Koop's "Koopcast" as its knowledge base, powering a sophisticated GenAI RAG (Retrieval-Augmented Generation) solution.</p>
+        <div class="card">
+            <h2>About This Bot</h2>
+            <p>This is a proof-of-concept AI bot built on the DigitalOcean GenAI stack. It uses hundreds of ultrarunning podcast transcripts as its knowledge base, powering a sophisticated DO GenAI RAG (Retrieval-Augmented Generation) solution.</p>
+        </div>
         
-        <h2>What Can It Do?</h2>
-        <p>The Jason Koop AI Bot can answer questions, provide insights, and discuss topics related to Jason Koop's expertise in endurance coaching, ultrarunning, and sports science. It's like having a virtual Jason Koop at your fingertips!</p>
+        <div class="card">
+            <h2>What Can It Do?</h2>
+            <p>The UltraCoach AI Bot can answer questions, provide insights, and discuss topics related to ultrarunning, endurance coaching, and sports science. It's like having a virtual ultrarunning coach at your fingertips!</p>
+        </div>
         
-        <h2>How to Use</h2>
-        <p>Look for the chat icon in the lower right corner of your screen. Click on it to open the chat interface and start interacting with the Jason Koop AI Bot. Feel free to ask questions about training, racing strategies, or any topic covered in the Koopcast podcasts.</p>
+        <div class="card">
+            <h2>How to Use</h2>
+            <p>Look for the chat icon in the lower right corner of your screen. Click on it to open the chat interface and start interacting with the UltraCoach AI Bot. Feel free to ask questions about training, racing strategies, or any topic related to ultrarunning and endurance sports.</p>
+        </div>
     </div>
 
     <script async
@@ -65,6 +76,5 @@
         data-starting-message="I'm Coach Jason. What training questions do you have?"
         data-logo="/static/chatbot/icons/default-agent.svg">
     </script>
-    
 </body>
 </html>
